@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tobiasz Martyniuk – CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      color: #111;
+      background: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 52px;
+      line-height: 1.4;
+    }
+
+    h1 {
+      font-size: 28pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 22px;
+    }
+
+    .contact a { color: #1a5fb4; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 3px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1.5px solid #111;
+      margin-bottom: 10px;
+    }
+
+    section { margin-bottom: 20px; }
+
+    /* Plain paragraphs instead of <table> — ATS parsers read tables unreliably. */
+    .skill-line {
+      font-size: 10pt;
+      padding: 1px 0;
+      line-height: 1.4;
+    }
+
+    .block { margin-bottom: 13px; }
+    .block:last-child { margin-bottom: 0; }
+
+    .block-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .block-meta {
+      font-size: 9.5pt;
+      font-style: italic;
+      color: #555;
+      margin: 1px 0 3px 0;
+    }
+
+    .block-meta a { color: #1a5fb4; text-decoration: none; font-style: normal; }
+    .block-meta a:hover { text-decoration: underline; }
+
+    ul { margin-left: 17px; }
+
+    ul li {
+      font-size: 10.5pt;
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+
+    .profile-text {
+      font-size: 10.5pt;
+      line-height: 1.5;
+    }
+
+    @media print {
+      body { padding: 18px 34px; }
+      a { color: #111 !important; }
+      /* The light version must fit on a single page. */
+      section { margin-bottom: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Tobiasz Martyniuk</h1>
+<div class="contact">
+  tobiasz_martyniuk@wp.pl &nbsp;·&nbsp; +48 888 592 621 &nbsp;·&nbsp; Warsaw, Poland<br>
+  <a href="https://www.linkedin.com/in/tobiasz-martyniuk-179b763a3/">linkedin.com/in/tobiasz-martyniuk-179b763a3</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/tobiamart">github.com/tobiamart</a>
+</div>
+
+<section>
+  <h2>Profile</h2>
+  <hr>
+  <p class="profile-text">
+    <strong>Final-semester Computer Science student (specialization: Robotics and Intelligent Autonomous Systems)
+    at the Polish-Japanese Academy of Information Technology.</strong> I program in Python – machine
+    learning and computer vision (PyTorch, OpenCV), data processing (pandas, SQL, ETL), and
+    LLM-based applications: I deploy models locally (Ollama) and build agents that use tools
+    (tool calling, Claude API). I'm looking for an internship or first junior position.
+  </p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <hr>
+  <div class="block">
+    <div class="block-title">Polish-Japanese Academy of Information Technology, Warsaw</div>
+    <div class="block-meta">
+      10.2023 – present &nbsp;·&nbsp; Computer Science (B.Eng.)
+      &nbsp;·&nbsp; Specialization: Robotics and Intelligent Autonomous Systems
+    </div>
+    <ul>
+      <li>Engineering thesis: <em>"Anomaly detection in video surveillance using a temporal autoencoder"</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <hr>
+  <div class="block">
+    <div class="block-title">Building with the Claude API – Anthropic</div>
+    <div class="block-meta">2026 &nbsp;·&nbsp; online course (Skilljar), certificate of completion</div>
+    <ul>
+      <li>Messages API, prompt engineering, tool use / function calling, prompt caching, streaming</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">AI Agents Course (Fundamentals of Agents) – Hugging Face</div>
+    <div class="block-meta">2026 &nbsp;·&nbsp; online course, certificate of completion</div>
+    <ul>
+      <li>LLM agent fundamentals: the Thought–Action–Observation loop, tool use, building an agent from scratch</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <hr>
+
+  <p class="profile-text">
+    My projects cover, among others: <strong>local LLM deployment and AI agents</strong>
+    (an offline assistant on Ollama, an agent loop with tool calling),
+    <strong>data processing</strong> (a Python ETL pipeline – data validation, star schema,
+    SQL database, Parquet), <strong>desktop applications with AI integration</strong>
+    (Tauri, React, Claude API), and <strong>computer vision</strong> (CNNs in PyTorch,
+    OpenCV algorithms). Code and write-ups:
+    <a href="https://github.com/tobiamart">github.com/tobiamart</a>.
+  </p>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <hr>
+  <p class="skill-line"><strong>Programming languages:</strong> Python (fluent), SQL, TypeScript, Java, C++, C#</p>
+  <p class="skill-line"><strong>AI / ML:</strong> PyTorch, OpenCV, neural networks (CNNs, autoencoders), computer vision, machine learning</p>
+  <p class="skill-line"><strong>LLM / AI engineering:</strong> Claude API (Anthropic), Ollama, local LLM deployment (on-premise), AI agents, tool calling / function calling, prompt engineering, prompt caching, streaming</p>
+  <p class="skill-line"><strong>Data:</strong> SQL (SQLite), pandas, NumPy, Matplotlib, ETL, data modelling, data validation and cleaning, Parquet, CSV</p>
+  <p class="skill-line"><strong>Backend / web:</strong> Flask, REST API, Node.js, React, Tauri</p>
+  <p class="skill-line"><strong>Tools:</strong> Git, GitHub, Docker, Linux, Windows, PowerShell, Jupyter Notebook, Vite</p>
+  <p class="skill-line"><strong>Languages:</strong> Polish (native), English (advanced)</p>
+</section>
+
+</body>
+</html>

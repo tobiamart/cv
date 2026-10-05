@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Tobiasz Martyniuk – CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      color: #111;
+      background: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 52px;
+      line-height: 1.4;
+    }
+
+    h1 {
+      font-size: 28pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      font-size: 10pt;
+      color: #333;
+      margin-bottom: 22px;
+    }
+
+    .contact a { color: #1a5fb4; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 3px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1.5px solid #111;
+      margin-bottom: 10px;
+    }
+
+    section { margin-bottom: 20px; }
+
+    /* Zwykłe akapity zamiast <table> — parsery ATS czytają tabele zawodnie. */
+    .skill-line {
+      font-size: 10pt;
+      padding: 1px 0;
+      line-height: 1.4;
+    }
+
+    .block { margin-bottom: 13px; }
+    .block:last-child { margin-bottom: 0; }
+
+    .block-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .block-meta {
+      font-size: 9.5pt;
+      font-style: italic;
+      color: #555;
+      margin: 1px 0 3px 0;
+    }
+
+    .block-meta a { color: #1a5fb4; text-decoration: none; font-style: normal; }
+    .block-meta a:hover { text-decoration: underline; }
+
+    ul { margin-left: 17px; }
+
+    ul li {
+      font-size: 10.5pt;
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+
+    .profile-text {
+      font-size: 10.5pt;
+      line-height: 1.5;
+    }
+
+    @media print {
+      body { padding: 18px 34px; }
+      a { color: #111 !important; }
+      /* Wersja light ma się mieścić na jednej stronie. */
+      section { margin-bottom: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Tobiasz Martyniuk</h1>
+<div class="contact">
+  tobiasz_martyniuk@wp.pl &nbsp;·&nbsp; +48 888 592 621 &nbsp;·&nbsp; Warszawa<br>
+  <a href="https://www.linkedin.com/in/tobiasz-martyniuk-179b763a3/">linkedin.com/in/tobiasz-martyniuk-179b763a3</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/tobiamart">github.com/tobiamart</a>
+</div>
+
+<section>
+  <h2>Profil</h2>
+  <hr>
+  <p class="profile-text">
+    <strong>Student ostatniego semestru informatyki (specjalizacja: Robotyka i Inteligentne Systemy Autonomiczne)
+    w Polsko-Japońskiej Akademii Technik Komputerowych.</strong> Programuję w Pythonie – uczenie
+    maszynowe i computer vision (PyTorch, OpenCV), przetwarzanie danych (pandas, SQL, ETL)
+    oraz aplikacje oparte na LLM: wdrażam modele lokalnie (Ollama) i buduję agentów
+    korzystających z narzędzi (tool calling, Claude API). Szukam stażu lub pierwszego
+    stanowiska juniorskiego.
+  </p>
+</section>
+
+<section>
+  <h2>Wykształcenie</h2>
+  <hr>
+  <div class="block">
+    <div class="block-title">Polsko-Japońska Akademia Technik Komputerowych, Warszawa</div>
+    <div class="block-meta">
+      10.2023 – obecnie &nbsp;·&nbsp; Informatyka (inż.)
+      &nbsp;·&nbsp; Specjalizacja: Robotyka i Inteligentne Systemy Autonomiczne
+    </div>
+    <ul>
+      <li>Praca inżynierska: <em>„Detekcja anomalii w monitoringu wideo z wykorzystaniem autoenkodera temporalnego"</em></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Certyfikaty</h2>
+  <hr>
+  <div class="block">
+    <div class="block-title">Building with the Claude API – Anthropic</div>
+    <div class="block-meta">2026 &nbsp;·&nbsp; kurs online (Skilljar), certyfikat ukończenia</div>
+    <ul>
+      <li>Messages API, prompt engineering, tool use / function calling, prompt caching, streaming</li>
+    </ul>
+  </div>
+  <div class="block">
+    <div class="block-title">AI Agents Course (Fundamentals of Agents) – Hugging Face</div>
+    <div class="block-meta">2026 &nbsp;·&nbsp; kurs online, certyfikat ukończenia</div>
+    <ul>
+      <li>Fundamenty agentów LLM: pętla Thought–Action–Observation, tool use, budowa agenta od podstaw</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projekty</h2>
+  <hr>
+
+  <p class="profile-text">
+    Buduję projekty m.in. w obszarach: <strong>lokalne wdrożenia LLM i agenci AI</strong>
+    (asystent działający offline na Ollamie, pętla agenta z tool callingiem),
+    <strong>przetwarzanie danych</strong> (pipeline ETL w Pythonie – walidacja danych,
+    model gwiazdy, baza SQL, Parquet), <strong>aplikacje desktopowe z integracją AI</strong>
+    (Tauri, React, Claude API) oraz <strong>computer vision</strong> (sieci CNN w PyTorch,
+    algorytmy OpenCV). Kod i opisy: <a href="https://github.com/tobiamart">github.com/tobiamart</a>.
+  </p>
+</section>
+
+<section>
+  <h2>Umiejętności Techniczne</h2>
+  <hr>
+  <p class="skill-line"><strong>Języki programowania:</strong> Python (biegły), SQL, TypeScript, Java, C++, C#</p>
+  <p class="skill-line"><strong>AI / ML:</strong> PyTorch, OpenCV, sieci neuronowe (CNN, autoenkodery), computer vision, uczenie maszynowe</p>
+  <p class="skill-line"><strong>LLM / AI engineering:</strong> Claude API (Anthropic), Ollama, lokalne wdrożenia LLM (on-premise), agenci AI, tool calling, prompt engineering</p>
+  <p class="skill-line"><strong>Dane:</strong> SQL (SQLite), pandas, NumPy, Matplotlib, ETL, modelowanie danych, walidacja i czyszczenie danych, Parquet, CSV</p>
+  <p class="skill-line"><strong>Backend / web:</strong> Flask, REST API, Node.js, React, Tauri</p>
+  <p class="skill-line"><strong>Narzędzia:</strong> Git, GitHub, Docker, Linux, Windows, PowerShell, Jupyter Notebook, Vite</p>
+  <p class="skill-line"><strong>Języki obce:</strong> polski (ojczysty), angielski (zaawansowany)</p>
+</section>
+
+</body>
+</html>
